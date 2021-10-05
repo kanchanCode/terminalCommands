@@ -19,7 +19,7 @@ function dailyAndTotalWageOfPartTime(){
 	echo "total presents are $present"
 	echo "total wage of a part time employee of $present days is $total"
 }
-dailyAndTotalWageOfPartTime
+#dailyAndTotalWageOfPartTime
 
 
  declare -a fullTime
@@ -67,4 +67,17 @@ function dailyAndTotalWageOfFullTime(){
 }
 
 
-dailyAndTotalWageOfFullTime
+#dailyAndTotalWageOfFullTime
+
+read -p "enter your choice 1 or 2 " choice
+
+case "$choice" in
+ 1)  dailyAndTotalWageOfFullTime
+  ;;
+ 2) dailyAndTotalWageOfPartTime
+  ;;
+ *) echo " enter the valid choice"
+  ;;
+esac
+
+ 
